@@ -9,6 +9,7 @@ btnSend.addEventListener("click",(e)=>{
   let errors = document.getElementById("errors");
   let validation = false;
    warnings = "";
+   errors.innerHTML = "";
    nameUser.textContent = username.value;
    
    if(username.value.length == ""){
