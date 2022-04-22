@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>form app</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="asests/css/style.css"/>
+</head>
+<body>
+  <div class="form-app">
+    <div class="card-title">
+      <h1>Welcome to my application</h1>
+      <h2>create your account is Free</h2>
+    </div>
+    <p id="errors"></p>
+    <form action="#" method="POST">
+      <div class="grup-input">
+        <input type="text" id="username" name="username" class="input-grup" placeholder="Enter your name">
+      </div>
+      <div class="grup-input">
+        <input type="email" id="email" name="email" class="input-grup" placeholder="Enter your address email">
+      </div>
+      <div class="grup-input">
+        <input type="password" id="password" name="password" class="input-grup" placeholder="create your password">
+        <i class="fa fa-eye-slash" id="show-password"></i>
+      </div>
+      <div class="btn-send">
+        <button type="submit" class="btn" id="send-form">
+          create my account
+        </button>
+      </div>
+    </form>
+  </div>
+  <script src="asests/js/app.js"></script>
+</body>
+</html>

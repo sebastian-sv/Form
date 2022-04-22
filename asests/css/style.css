@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+:root{
+  --bg-body:#FCFDFF;
+  --bg-form:#FFFFFF;
+  --main-color:#FF0063;
+  --font-body: 'Poppins', sans-serif;
+}
+body{
+  background-color:var(--bg-body);
+  font-family:var(--font-body);
+}
+.form-app{
+  width:90%;
+  max-width:400px;
+  height:auto;
+  max-height:450px;
+  background:var(--bg-form);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  overflow:hidden;
+  border-radius:7px;
+  padding:2em;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+.form-app .card-title{
+  line-height:40px;
+}
+.form-app .card-title h1{
+  font-size:1.4em;
+  font-weight:600;
+}
+.form-app .card-title h2{
+  font-size:1.1em;
+  font-weight:500;
+}
+.form-app form{
+  text-align:center;
+  display:block;
+  padding:0.5em 0;
+}
+form .grup-input{
+  margin:0.7em 0;
+}
+form .grup-input .input-grup{
+  width:100%;
+  height:40px;
+  font-family:var(--font-body);
+  font-size:12px;
+  font-weight:400;
+  padding:12px;
+  border:1px solid #999;
+  border-radius:3px;
+  outline:none;
+}
+.grup-input,.input-grup{
+  position:relative;
+}
+ #show-password{
+  position:absolute;
+  top:50%;
+  transform:translate(-50%,-50%);
+  right:10px;
+  font-size:18px;
+  color:#999;
+}
+.grup-input .input-grup::placeholder{
+  font-size:12px;
+  color:#999;
+  font-weight:400;
+}
+form .btn-send{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:22px 0;
+}
+.btn-send .btn{
+  width:100%;
+  background:var(--main-color);
+  color:#FFFFFF;
+  padding:1.2em 0;
+  font-size:15px;
+  font-weight:400;
+  border:none;
+  outline:none;
+  border-radius:4px;
+}
+#errors{
+  font-size:12px;
+  font-weight:400;
+  line-height:23px;
+}
