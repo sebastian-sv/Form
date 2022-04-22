@@ -6,9 +6,11 @@ const emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
 
 btnSend.addEventListener("click",(e)=>{
   e.preventDefault();
-  const errors = document.getElementById("errors");
+  let errors = document.getElementById("errors");
   let validation = false;
    warnings = "";
+   nameUser.textContent = username.value;
+   
    if(username.value.length == ""){
      warnings += `empty name <br>`;
      validation = true;
@@ -29,12 +31,13 @@ btnSend.addEventListener("click",(e)=>{
    }
    if(validation){
      errors.innerHTML = warnings;
+
    }else{
-     errors.innerHTML = `you have successfully registered`;
+     boxModal.classList.add("box-modal-active");
    }
 });
-const showPassword = document.getElementById("show-password");
 
+const showPassword = document.getElementById("show-password");
 showPassword.addEventListener("click",()=>{
   if(password.type === "password"){
     password.type = "text";
@@ -43,4 +46,16 @@ showPassword.addEventListener("click",()=>{
     password.type = "password";
     showPassword.classList.replace("fa-eye","fa-eye-slash");
   }
+});
+
+const boxModal = document.querySelector(".box-modal");
+const modal = document.querySelector(".modal");
+let nameUser = document.getElementById("name-user");
+
+boxModal.addEventListener("click",()=>{
+  boxModal.classList.remove("box-modal-active");
+});
+
+modal.addEventListener("click",(e)=>{
+  e.stopPropagation();
 });

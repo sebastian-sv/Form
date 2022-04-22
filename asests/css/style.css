@@ -8,6 +8,7 @@
   --bg-body:#FCFDFF;
   --bg-form:#FFFFFF;
   --main-color:#FF0063;
+  --bg-card:#FFFFFF;
   --font-body: 'Poppins', sans-serif;
 }
 body{
@@ -18,27 +19,28 @@ body{
   width:90%;
   max-width:400px;
   height:auto;
-  max-height:450px;
+  max-height:480px;
   background:var(--bg-form);
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
   overflow:hidden;
   border-radius:7px;
-  padding:2em;
+  padding:2.4em;
   position:absolute;
   top:50%;
   left:50%;
   transform:translate(-50%,-50%);
 }
 .form-app .card-title{
-  line-height:40px;
+  line-height:35px;
 }
 .form-app .card-title h1{
   font-size:1.4em;
   font-weight:600;
 }
 .form-app .card-title h2{
-  font-size:1.1em;
-  font-weight:500;
+  font-size:1em;
+  font-weight:400;
+  color:#373737;
 }
 .form-app form{
   text-align:center;
@@ -54,19 +56,19 @@ form .grup-input .input-grup{
   font-family:var(--font-body);
   font-size:12px;
   font-weight:400;
-  padding:12px;
-  border:1px solid #999;
-  border-radius:3px;
+  border:none;
+  border-bottom:1px solid #999;
   outline:none;
 }
 .grup-input,.input-grup{
   position:relative;
+  margin:0.5em 0;
 }
  #show-password{
   position:absolute;
   top:50%;
   transform:translate(-50%,-50%);
-  right:10px;
+  right:6px;
   font-size:18px;
   color:#999;
 }
@@ -87,7 +89,7 @@ form .btn-send{
   background:var(--main-color);
   color:#FFFFFF;
   padding:1.2em 0;
-  font-size:15px;
+  font-size:13px;
   font-weight:400;
   border:none;
   outline:none;
@@ -97,4 +99,53 @@ form .btn-send{
   font-size:12px;
   font-weight:400;
   line-height:23px;
+}
+.box-modal{
+  width:100%;
+  height:100vh;
+  background:#000000A1;
+  position:fixed;
+  display:none;
+  transition: transform .3s;
+  top:0;
+  left:0;
+  z-index:2;
+}
+.modal{
+  width:90%;
+  max-width:400px;
+  height:auto;
+  background:var(--bg-card);
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  padding:2em;
+  overflow:hidden;
+  border-radius:8px;
+  text-align:center;
+}
+.box-modal-active{
+  display:block;
+  transition: transform .3s;
+}
+.modal p{
+  padding:10px 0;
+  font-size:12px;
+  font-weight:400;
+}
+.modal h5{
+  font-size:1em;
+  font-weight:500;
+}
+.modal a{
+  display:inline-block;
+  text-decoration:none;
+  background:var(--main-color);
+  padding:1em 3em;
+  font-size:12px;
+  margin-top:5px;
+  border-radius:3px;
+  font-weight:400;
+  color:#FFFFFF;
 }
