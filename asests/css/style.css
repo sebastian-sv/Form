@@ -1,151 +1,135 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
 }
 :root{
-  --bg-body:#FCFDFF;
-  --bg-form:#FFFFFF;
-  --main-color:#FF0063;
+  --bg-body-app:#FEFDFF;
+  --color-text-app:#000000;
   --bg-card:#FFFFFF;
-  --font-body: 'Poppins', sans-serif;
+  --main-color:#FF0063;
+  --font-app: 'Raleway', sans-serif;
 }
 body{
-  background-color:var(--bg-body);
-  font-family:var(--font-body);
+  background-color:var(--bg-body-app);
+  font-family:var(--font-app);
+  color:var(--color-text-app);
 }
-.form-app{
-  width:90%;
-  max-width:400px;
-  height:auto;
-  max-height:480px;
-  background:var(--bg-form);
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-  overflow:hidden;
-  border-radius:7px;
-  padding:2.4em;
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-}
-.form-app .card-title{
-  line-height:35px;
-}
-.form-app .card-title h1{
-  font-size:1.4em;
-  font-weight:600;
-}
-.form-app .card-title h2{
-  font-size:1em;
-  font-weight:400;
-  color:#373737;
-}
-.form-app form{
-  text-align:center;
-  display:block;
-  padding:0.5em 0;
-}
-form .grup-input{
-  margin:0.7em 0;
-}
-form .grup-input .input-grup{
-  width:100%;
-  height:40px;
-  font-family:var(--font-body);
-  font-size:12px;
-  font-weight:400;
-  border:none;
-  border-bottom:1px solid #999;
-  outline:none;
-}
-.grup-input,.input-grup{
-  position:relative;
-  margin:0.5em 0;
-}
- #show-password{
-  position:absolute;
-  top:50%;
-  transform:translate(-50%,-50%);
-  right:6px;
-  font-size:18px;
-  color:#999;
-}
-.grup-input .input-grup::placeholder{
-  font-size:12px;
-  color:#999;
-  font-weight:400;
-}
-form .btn-send{
-  width:100%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  margin:22px 0;
-}
-.btn-send .btn{
-  width:100%;
-  background:var(--main-color);
-  color:#FFFFFF;
-  padding:1.2em 0;
-  font-size:13px;
-  font-weight:400;
-  border:none;
-  outline:none;
-  border-radius:4px;
-}
-#errors{
-  font-size:12px;
-  font-weight:400;
-  line-height:23px;
-}
-.box-modal{
-  width:100%;
-  height:100vh;
-  background:#000000A1;
-  position:fixed;
-  display:none;
-  transition: transform .3s;
-  top:0;
-  left:0;
-  z-index:2;
-}
-.modal{
-  width:90%;
-  max-width:400px;
-  height:auto;
-  background:var(--bg-card);
+.container-app .card-form-app{
   position:absolute;
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
-  padding:2em;
+}
+.card-form-app{
+  width:90%;
+  max-width:400px;
+  height:auto;
+  padding:2.2em;
   overflow:hidden;
-  border-radius:8px;
+  border-radius:5px;
+  background:var(--bg-card);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;  
   text-align:center;
 }
-.box-modal-active{
-  display:block;
-  transition: transform .3s;
+.card-form-app .title-app{
+  padding:1em 0em;
 }
-.modal p{
-  padding:10px 0;
-  font-size:12px;
+.card-form-app .title-app h1{
+  font-size:1.3em;
+  font-weight:600;
+  margin:16px 0px;
+}
+.title-app h2{
+  font-size:.9em;
+  font-weight:300;
+  color:#373737;
+}
+.title-app h2 a{
+  color:var(--main-color);
   font-weight:400;
-}
-.modal h5{
-  font-size:1em;
-  font-weight:500;
-}
-.modal a{
-  display:inline-block;
   text-decoration:none;
-  background:var(--main-color);
-  padding:1em 3em;
+  margin:0px 3px;
+}
+.card-form-app form {
+  width:100%;
+  text-align:center;
+  display:grid;
+  gap:1.2em;
+  margin-top:1em;
+  padding-bottom:1em;
+}
+form .grup-input input{
+  width:100%;
+  height:40px;
+  padding:1em 0; 
+  border:none;
+  border-bottom:1px solid #8777;
+  outline:none;
+  font-family:var(--font-app);
   font-size:12px;
-  margin-top:5px;
-  border-radius:3px;
   font-weight:400;
-  color:#FFFFFF;
+  position:relative;
+}
+.grup-input{
+  position:relative;
+}
+.grup-input i{
+  position:absolute;
+  top:5px;
+  right:10px;
+  font-size:1.5em;
+  color:#999;
+}
+.grup-input input::placeholder{
+  color:#999;
+  font-weight:400;
+}
+.card-form-app .btn-send{
+  width:100%;
+}
+.btn-send .btn{
+  width:100%;
+  height: auto;
+  background-color:var(--main-color);
+  font-family:var(--font-app);
+  border:none;
+  outline:none;
+  border-radius:4px;
+  font-weight:600;
+  font-size:13px;
+  color:#fff;
+  padding:1.2em 0;
+}
+.privacy-legal,.new-password{
+  text-align:center;
+  display:block;
+  padding:5px 0;
+  line-height:20px;
+}
+.privacy-legal p{
+  font-size:12px;
+  font-weight:400;
+  color:#000;
+}
+.privacy-legal a{
+  display:block;
+  text-decoration:none;
+  font-weight:300;
+  color:var(--main-color);
+}
+.new-password a{
+  display:block;
+  text-decoration:none;
+  font-weight:300;
+  color:var(--main-color);
+  font-size:.9em;
+}
+#errors{
+  text-align:center;
+  display:block;
+  font-size:12px;
+  font-weight:400;
+  line-height:21px;
 }

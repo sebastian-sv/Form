@@ -2,10 +2,8 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gestory</title>
-  <!-- Custom Styles -->
+  <title>iniciar sesión</title>
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="asests/css/style.css"/>
 </head>
@@ -13,37 +11,31 @@
   <div class="container-app">
     <div class="card-form-app">
       <div class="title-app">
-        <h1>Regístrate</h1>
-        <h2>Ya tienes cuenta 
-        <a href="login.html">iniciar sesión</a>
+        <h1>iniciar sesión</h1>
+        <h2>aun no tienes cuenta
+        <a href="index.html">crear cuenta</a>
         </h2>
+        <span id="errors"></span>
       </div>
-      <p id="errors"></p>
       <form action="#" method="POST">
-        <div class="grup-input">
-          <input type="text" id="username" name="username" placeholder="Ingresá tu nombre"/>
-        </div>
         <div class="grup-input">
           <input type="email" id="email" name="email" placeholder="Ingresá tu correo electrónico"/>
         </div>
         <div class="grup-input">
-          <input type="password" id="password" name="password" placeholder="Crear una contraseña"/>
+          <input type="password" id="password" name="password" placeholder="ingresá tu contraseña"/>
           <i class="bx bx-low-vision" id="show"></i>
         </div>
         <div class="btn-send">
           <button class="btn" id="send-data">
-            crear cuenta
+            iniciar sesión
           </button>
         </div>
-        <div class="privacy-legal">
-          <p>Al crear una cuenta con nosotros has aceptado
-          <a href="#">Nuestros Términos y Condiciones</a>
-          </p>
+        <div class="new-password">
+          <a href="#">olvide mi contraseña ?</a>
         </div>
       </form>
     </div>
   </div> 
-  <!-- Project -->
-  <script src="asests/js/app.js"></script>
+  <script src="asests/js/login.js"></script>
 </body>
 </html>
