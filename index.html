@@ -4,46 +4,46 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gestory</title>
+  <title>crear cuenta</title>
   <!-- Custom Styles -->
-  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="asests/css/style.css"/>
+  <link rel="stylesheet" href="asests/css/style.css">
+  <script src="https://kit.fontawesome.com/8b70c06df0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="container-app">
-    <div class="card-form-app">
-      <div class="title-app">
-        <h1>Regístrate</h1>
-        <h2>Ya tienes cuenta 
-        <a href="login.html">iniciar sesión</a>
-        </h2>
-      </div>
-      <p id="errors"></p>
-      <form action="#" method="POST">
-        <div class="grup-input">
-          <input type="text" id="username" name="username" placeholder="Ingresá tu nombre"/>
-        </div>
-        <div class="grup-input">
-          <input type="email" id="email" name="email" placeholder="Ingresá tu correo electrónico"/>
-        </div>
-        <div class="grup-input">
-          <input type="password" id="password" name="password" placeholder="Crear una contraseña"/>
-          <i class="bx bx-low-vision" id="show"></i>
-        </div>
-        <div class="btn-send">
-          <button class="btn" id="send-data">
-            crear cuenta
-          </button>
-        </div>
-        <div class="privacy-legal">
-          <p>Al crear una cuenta con nosotros has aceptado
-          <a href="#">Nuestros Términos y Condiciones</a>
-          </p>
-        </div>
-      </form>
+  <div class="card-form">
+    <div class="card-title">
+      <h1>crear cuenta</h1>
     </div>
-  </div> 
+    <form action="#" method="POST" autocomplete="off" id="form">
+      <div class="grup-item">
+        <label>Nombre de usuario</label>
+        <input type="text" class="input error" id="username" name="username" placeholder="Ingresa tu nombre"/>
+      </div>
+      <div class="grup-item">
+        <label>Correo electrónico</label>
+        <input type="email" class="input" id="email" name="email" placeholder="Ingresa tu correo electrónico"/>
+      </div>
+      <div class="grup-item">
+        <label>crea tu contraseña </label>
+        <input type="password" class="input" id="password" name="password" placeholder="crea una contraseña"/>
+        <i class="fas fa-eye-slash" id="show-pass"></i>
+      </div>
+      <div class="grup-item">
+        <div class="section-legal">
+          <input type="checkbox" name="politica" id="poltica">
+          <a href="#">Aceptó los términos y condiciones </a>
+        </div>
+      </div>
+      <div class="grup-item">
+        <input type="submit" value="Registrarme" class="btn-send input"/>
+      </div>
+      <div class="grup-item">
+        <span>tienes una cuenta <a href="login.html">inicia sesión...</a></span>
+      </div>
+      <div id="error"></div>
+    </form>
+  </div>
   <!-- Project -->
-  <script src="asests/js/app.js"></script>
+  <script src="asests/js/register.js"></script>
 </body>
 </html>

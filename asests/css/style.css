@@ -1,135 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
 }
 :root{
-  --bg-body-app:#FEFDFF;
-  --color-text-app:#000000;
+  --bg-body:#FEFEFE;
   --bg-card:#FFFFFF;
-  --main-color:#FF0063;
-  --font-app: 'Raleway', sans-serif;
+  --font-family: 'Raleway', sans-serif;
 }
 body{
-  background-color:var(--bg-body-app);
-  font-family:var(--font-app);
-  color:var(--color-text-app);
+  background-color:var(--bg-body);
+  font-family:var(--font-family);
 }
-.container-app .card-form-app{
-  position:absolute;
+.card-form{
+  width:400px;
+  max-width: 400px;
+  position: absolute;
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
-}
-.card-form-app{
-  width:90%;
-  max-width:400px;
-  height:auto;
-  padding:2.2em;
-  overflow:hidden;
-  border-radius:5px;
   background:var(--bg-card);
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;  
-  text-align:center;
+  overflow:hidden;
+  border-radius:8px;
+  padding:3em 3em;
+  box-shadow:0px 0px 35px -25px rgba(000, 000, 000, 0.7);
 }
-.card-form-app .title-app{
-  padding:1em 0em;
+.card-form .card-title{
+  margin:30px 0px;
+  text-align: center;
+  display: block;
 }
-.card-form-app .title-app h1{
+.card-title h1{
   font-size:1.3em;
-  font-weight:600;
-  margin:16px 0px;
+  text-align: center;
+  display: block;
+  font-weight:700;
 }
-.title-app h2{
-  font-size:.9em;
-  font-weight:300;
+form .grup-item{
+  width:100%;
+  margin:1em 0;
+}
+form label{
+  font-size:12px;
+  font-weight:500;
   color:#373737;
 }
-.title-app h2 a{
-  color:var(--main-color);
-  font-weight:400;
-  text-decoration:none;
-  margin:0px 3px;
-}
-.card-form-app form {
+.grup-item .input{
+  margin-top:12px;
   width:100%;
-  text-align:center;
-  display:grid;
-  gap:1.2em;
-  margin-top:1em;
-  padding-bottom:1em;
-}
-form .grup-input input{
-  width:100%;
-  height:40px;
-  padding:1em 0; 
-  border:none;
-  border-bottom:1px solid #8777;
-  outline:none;
-  font-family:var(--font-app);
+  border:1px solid #ccc;
+  outline: none;
+  padding:10px 12px;
   font-size:12px;
   font-weight:400;
+  font-family: var(--font-family);
+  height:50px;
+  border-radius:3px;
+  position: relative;
+}
+.grup-item{
   position:relative;
 }
-.grup-input{
-  position:relative;
-}
-.grup-input i{
-  position:absolute;
-  top:5px;
-  right:10px;
-  font-size:1.5em;
-  color:#999;
-}
-.grup-input input::placeholder{
-  color:#999;
-  font-weight:400;
-}
-.card-form-app .btn-send{
-  width:100%;
-}
-.btn-send .btn{
-  width:100%;
-  height: auto;
-  background-color:var(--main-color);
-  font-family:var(--font-app);
-  border:none;
-  outline:none;
-  border-radius:4px;
-  font-weight:600;
-  font-size:13px;
-  color:#fff;
-  padding:1.2em 0;
-}
-.privacy-legal,.new-password{
-  text-align:center;
-  display:block;
-  padding:5px 0;
-  line-height:20px;
-}
-.privacy-legal p{
-  font-size:12px;
-  font-weight:400;
+.grup-item span{
+  display: block;
+  text-decoration: none;
   color:#000;
-}
-.privacy-legal a{
-  display:block;
-  text-decoration:none;
-  font-weight:300;
-  color:var(--main-color);
-}
-.new-password a{
-  display:block;
-  text-decoration:none;
-  font-weight:300;
-  color:var(--main-color);
-  font-size:.9em;
-}
-#errors{
-  text-align:center;
-  display:block;
   font-size:12px;
   font-weight:400;
-  line-height:21px;
+  text-align: center;
 }
+.grup-item span a{
+  text-decoration: none;
+  color:#0070FF;
+  margin-left:4px;
+}
+ #show-pass{
+  position: absolute;
+  top:46px;
+  right:15px;
+  color:#333;
+  font-size:20px;
+}
+.grup-item .btn-send{
+  background:#000000;
+  color:#fff;
+  border-radius:6px;
+  font-size:11px;
+  font-weight:500;
+}
+.grup-item .btn-send:hover{
+  background:#242426;
+  transition: background.4s ease;
+}
+.section-legal{
+  display:flex;
+  align-items:center;
+  grid-gap:0.5em;
+}
+.section-legal a{
+  text-decoration: none;
+  color:#126BE8;
+  font-size:12px;
+  font-weight:400;
+}
+.grup-item-options{
+  width:100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  margin-bottom:10px;
+}
+.grup-item-options a{
+  text-decoration:none;
+  font-size:12px;
+  font-weight:400;
+  color:#126BE8;
+}
+#error{
+  font-size:12px;
+  text-align: center;
+  display: block;
+  line-height:1.7em;
+  font-weight:400;
+}
+/*======== copyright 2021 sebastian ========*/
