@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 *{
   margin:0;
   padding:0;
@@ -7,7 +7,7 @@
 :root{
   --bg-body:#FEFEFE;
   --bg-card:#FFFFFF;
-  --font-family: 'Raleway', sans-serif;
+  --font-family: 'Poppins', sans-serif;
 }
 body{
   background-color:var(--bg-body);
@@ -34,8 +34,9 @@ body{
 .card-title h1{
   font-size:1.3em;
   text-align: center;
+  text-transform: uppercase;
   display: block;
-  font-weight:700;
+  font-weight:600;
 }
 form .grup-item{
   width:100%;
@@ -43,7 +44,7 @@ form .grup-item{
 }
 form label{
   font-size:12px;
-  font-weight:500;
+  font-weight:400;
   color:#373737;
 }
 .grup-item .input{
@@ -67,7 +68,7 @@ form label{
   text-decoration: none;
   color:#000;
   font-size:12px;
-  font-weight:400;
+  font-weight:300;
   text-align: center;
 }
 .grup-item span a{
@@ -102,7 +103,7 @@ form label{
   text-decoration: none;
   color:#126BE8;
   font-size:12px;
-  font-weight:400;
+  font-weight:300;
 }
 .grup-item-options{
   width:100%;
@@ -115,7 +116,7 @@ form label{
 .grup-item-options a{
   text-decoration:none;
   font-size:12px;
-  font-weight:400;
+  font-weight:300;
   color:#126BE8;
 }
 #error{
@@ -123,6 +124,6 @@ form label{
   text-align: center;
   display: block;
   line-height:1.7em;
-  font-weight:400;
+  font-weight:300;
 }
 /*======== copyright 2021 sebastian ========*/
