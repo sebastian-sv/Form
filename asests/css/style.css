@@ -54,7 +54,7 @@ form label{
   outline: none;
   padding:10px 12px;
   font-size:12px;
-  font-weight:400;
+  font-weight:300;
   font-family: var(--font-family);
   height:50px;
   border-radius:3px;
@@ -78,7 +78,7 @@ form label{
 }
  #show-pass{
   position: absolute;
-  top:46px;
+  top:48px;
   right:15px;
   color:#333;
   font-size:20px;
