@@ -78,9 +78,10 @@ form label{
 }
  #show-pass{
   position: absolute;
-  top:48px;
+  top:50%;
   right:15px;
   color:#333;
+  transform: translateY(50%);
   font-size:20px;
 }
 .grup-item .btn-send{
